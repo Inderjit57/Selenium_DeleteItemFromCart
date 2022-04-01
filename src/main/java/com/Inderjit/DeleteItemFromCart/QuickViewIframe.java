@@ -54,7 +54,6 @@ public class QuickViewIframe extends TestBase {
 	public ViewCart clickOnCart() {
 		actions = new Actions(wd);
 		actions.moveToElement(goToCart).perform();
-//		je.executeScript("document.getElementById('goToCart').click();");
 
 		goToCart.click();
 		return new ViewCart();
