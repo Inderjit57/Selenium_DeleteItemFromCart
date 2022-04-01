@@ -68,14 +68,14 @@ public class ShoppingCartSummaryTest extends TestBase {
 
 		// verify successful deleted message
 		String successfulDeletedMessage = shoppingCartSummary.getDeletedText();
-		System.out.println("Deleted message: "+successfulDeletedMessage);
+		System.out.println("Deleted message: " + successfulDeletedMessage);
 		Assert.assertEquals(successfulDeletedMessage, "Your shopping cart is empty.", "Message not found");
 
 	}
 
 	@AfterMethod
 	public void closeBrowser() {
-		// tearDown();
+		tearDown();
 	}
 
 }
