@@ -17,6 +17,7 @@ public class ShoppingCartSummary extends TestBase {
 	@FindBy(css="p[class='alert alert-warning']")
 	WebElement deletedMessage;
 	
+	//wait for the message to appear on the DOM
 	public void waitForElementToAppear() {
 		driverWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("p[class='alert alert-warning']")));
 	}
