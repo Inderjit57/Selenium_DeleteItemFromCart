@@ -68,6 +68,6 @@ public class TestBase {
 	}
 
 	public void tearDown() {
-		// wd.quit();
+		 wd.quit();
 	}
 }
